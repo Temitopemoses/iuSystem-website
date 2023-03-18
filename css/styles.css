@@ -274,10 +274,3 @@ letter-spacing: 2px;
   text-align: center;
   font-style: italic;
 }
-.mission p{
-  border-style: inherit;
-  border-color: hsl(240, 90%, 33%);
-  border: 2px;
-  padding: 10px;
-  background-color: #0808a0;
-}
