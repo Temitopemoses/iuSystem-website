@@ -32,7 +32,7 @@ input[type=text], select {
  
  input[type=submit], input[type=reset] {
     width:  100%;
-    background-color: #0808a0;
+    background-color:#0808a0;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -42,12 +42,12 @@ input[type=text], select {
     border-radius: 4px;}
 
   input[type=submit]:hover {
-    background-color: #0808a0;
+    background-color:  #3e4095;
 }
 .logo{
-  width: 200px;
+  width: 170px;
   height: auto;
-  margin: 10px;
+  margin: 20px;
   position: absolute;
   display: block;
 }
@@ -87,7 +87,7 @@ input[type=text], select {
   font-weight: bold;
 }
 /*navbar styles for screens smaller than 768px */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   nav{
     flex-direction: row;
   }
@@ -98,7 +98,7 @@ input[type=text], select {
   nav li {
     margin: 10px 0;
   }
-}*/
+}
 .container{
   background-color: white;
   display: block;
@@ -246,7 +246,7 @@ letter-spacing: 2px;
   justify-content: space-around;
   display: flex;
   margin-top: 200px;
-  background-color: #0808a0;
+  background-color: #3e4095;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -273,4 +273,79 @@ letter-spacing: 2px;
   margin-top: 5px;
   text-align: center;
   font-style: italic;
+}
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:#3e4095;
+  margin-top: 100px;
+  color: #fff;
+  text-align: center;
+}
+.statement-h2{
+  margin-top: 20px;
+
+}
+.statement-ul{
+  text-align: left;
+  list-style: none;
+  text-indent: 5px;
+}
+.statement-row{
+  justify-content: space-around;
+  display: flex;
+  margin-top: 0 -10px;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.mission{
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  
+}
+.statement-p{
+  margin-top: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+.horizontal-line{
+  border: none;
+  border-top: 4px solid black;
+  background-color: #ccc;
+  margin: 20px 0;
+  height: 1px;
+}
+.competition-h1{
+  text-align: center;
+  font-family: "Vidaloka," sans-serif;
+  font-weight: 300;
+  font-size: 52px;
+  font-style: normal;
+  font-variant-caps: normal ;
+  font-variant-east-asian: normal;
+   font-variant-ligatures: normal ;
+   font-variant-numeric: normal;
+   background-color: #3e4095;
+   color: #fff;
+}
+.competition-p{
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  margin: 10px;
+  font-family: "Hind" sans-serif;
+  font-weight: 400;
+}
+.competition-h{
+
+  margin: 10px;
+  font-family: "Hind" sans-serif;
+  font-weight: bold;
+}
+.letter-s{
+  color: #3e4095;
 }
