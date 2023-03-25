@@ -21,7 +21,6 @@
             <img src="img/logo1.png" alt="logo_img" class="logo">
           </a>
           <div class="flex items-center lg:order-2">
-              <a href="tel:08163874757" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">+234-(0)-8163874757</a>
               <a href="tel:08163874757" class="text-white bg-primary-700 hover:bg-gray-50 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Call</a>
               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
@@ -52,28 +51,48 @@
       </div>
     </nav>
   </header>
-    </header>
-  <div class="register">
+  <div class="register px-4 sm:px-0">
     <form class="registration-form">
       <legend> <h1>Registration:</h1></legend>
       <br>
-      Select images: <input type="file" name="img" multiple><br><br>
-      <input type="text" name="firstname" placeholder="First Name" required>
-      <br><br>
-      <input type="text" name="lastname" placeholder="Last Name" required>
-      <br><br>
-      <input type="text" name="Email" placeholder="Email Address" required>
-      <br><br>
-      Gender:<br><br>
-      <input type="radio" name="Male"> Male
-      <br>
-      <input type="radio" name="Female"> Female
-      <br><br>
-      <input type="text" name="School" placeholder="Name of School" required>
-      <br><br>
-      <input type="tel" name="Phone Number" placeholder="Phone Number" required>
-      <br><br>
-      <input type="submit" value="Submit">
+      <div class="mb-4">
+        <label for="img">Select images:</label>
+        <input type="file" name="img" id="img" class="block" multiple>
+      </div>
+      <div class="mb-4">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" required class="block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required class="block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="Email Address" required class="block w-full">
+      </div>
+      <div class="mb-4">
+        <label>Gender:</label>
+        <div>
+          <input type="radio" name="gender" id="male" value="male" class="mr-2">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" value="female" class="mr-2">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="school">Name of School:</label>
+        <input type="text" name="school" id="school" placeholder="Name of School" required class="block w-full">
+      </div>
+      <div class="mb-4">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required class="block w-full">
+      </div>
+      <div class="text-center">
+        <input type="submit" value="Submit">
+      </div>
     </form> 
 </div>
 </body>
