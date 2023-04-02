@@ -11,6 +11,7 @@
     <!-- css-->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
+<script>"my_script.js"</script>
 </head>
 <body>
   <header>
@@ -93,18 +94,5 @@
       </div>
     </form> 
 </div>
-<script>
-document.querySelector('[data-collapse-toggle]').addEventListener('click', function() {
-  document.getElementById(this.getAttribute('aria-controls')).classList.toggle('hidden');
-  this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-  this.querySelectorAll('svg').forEach(function(svg) {
-    svg.classList.toggle('hidden');
-  });
-});
-
-
-
-
-</script>
 </body>
 </html>
