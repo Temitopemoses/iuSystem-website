@@ -95,14 +95,17 @@
     </form> 
 </div>
 <script>
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
-
-menuToggle.addEventListener("click", () => {
-  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-  menuToggle.setAttribute("aria-expanded", !isOpen);
-  mobileMenu.classList.toggle("hidden");
+document.querySelector('[data-collapse-toggle]').addEventListener('click', function() {
+  document.getElementById(this.getAttribute('aria-controls')).classList.toggle('hidden');
+  this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+  this.querySelectorAll('svg').forEach(function(svg) {
+    svg.classList.toggle('hidden');
+  });
 });
+
+
+
+
 </script>
 </body>
 </html>
