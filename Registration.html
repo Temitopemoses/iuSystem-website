@@ -11,7 +11,6 @@
     <!-- css-->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
-    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
   <header>
@@ -95,5 +94,15 @@
       </div>
     </form> 
 </div>
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", !isOpen);
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
 </body>
 </html>
