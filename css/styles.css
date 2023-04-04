@@ -11,7 +11,15 @@ body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+@media screen and (max-width: 768px){
+  body{
+    line-height: 1.2;
+  }
+  p{
+    margin: 10px;
+  }
+  
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 10px;
@@ -407,7 +415,7 @@ letter-spacing: 2px;
 .button {
 display: inline-block;
 padding: 10px 20px;
-background-color: #0808a0;
+background-color: #3e4095;
 color: #fff;
 align-items: center;
 text-decoration: none;
@@ -415,4 +423,24 @@ font-size: 16px;
 border-radius: 5px;
 border: none;
 margin: 10px;
+}
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Set the image's initial opacity to 0 */
+.team-member img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* When the image enters the viewport, fade it in */
+.team-member img.is-visible {
+  opacity: 1;
 }
