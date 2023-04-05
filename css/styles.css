@@ -59,6 +59,13 @@ input[type=text], select {
   position: absolute;
   display: block;
 }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Make sure the nav bar appears on top of other elements */
+}
 .navbar {
     float: right;
     display: flex;
